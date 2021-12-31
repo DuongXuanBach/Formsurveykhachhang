@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form lấy survey khách hàng</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 5px solid rgba(225, 223, 223, 0.01);
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Market Research Survey</h1>
+<p>Please take a few moments to complete this satisfaction survey.</p>
+<p>What is your age range?</p>
+<select>
+    <option value="">18-24</option>
+    <option value="">25-34</option>
+    <option value="">30-50</option>
+</select>
+<p>What is your yearly income range?</p>
+<select>
+    <option value="">0 - $25,000</option>
+    <option value="">$25,001 - $50,000</option>
+    <option value="">$50,001 - $100.000</option>
+    <option value="">$100,000+</option>
+</select>
+<p>Gender Identity</p>
+<form >
+    <label> <input name="ok" value="Male" type="radio" checked>Male</label> <br>
+    <label> <input name="ok" value="Female" type="radio">Female</label> <br>
+    <label> <input name="ok" value="Nonbinary" type="radio">Nonbinary</label> <br>
+    <label> <input name="ok" value="Other" type="radio">Other</label> <br>
+    <input type="text" Size="30" >
+</form>
+<p>Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+<form>
+    <label> <input type="checkbox" name="ok" value="Product 1" >Product 1</label> <br>
+    <label> <input type="checkbox" name="ok" value="Product 2" >Product 2</label> <br>
+    <label> <input type="checkbox" name="ok" value="Product 3" >Product 3</label> <br>
+</form>
+<p>How often would you use our new product?</p>
+<form>
+    <label> <input type="radio" name="ok" value="Daily" checked>Daily</label> <br>
+    <label> <input type="radio" name="ok" value="Weekly" checked>Weekly</label> <br>
+    <label> <input type="radio" name="ok" value="Monthy" checked>Monthly</label> <br>
+</form>
+<p>What would you pay for the new product?</p>
+
+<p>$
+<input type="text" size="5"> .
+<input type="text" size="1">
+</p>
+<p>What features would you like to see in the new product.</p>
+
+<textarea cols="200" rows="10"></textarea>
+<p>Please rate your level of agreement with the following statements.</p>
+<table>
+    <tr>
+        <th></th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+    </tr>
+    <tr>
+        <td>Our products are priced fairly.</td>
+        <td> <label> <input type="radio" name="ok" value="1" checked>1</label> </td>
+        <td> <label> <input type="radio" name="ok" value="2" checked>2</label> </td>
+        <td> <label> <input type="radio" name="ok" value="3" checked>3</label> </td>
+        <td> <label> <input type="radio" name="ok" value="4" checked>4</label> </td>
+    </tr>
+    <tr>
+        <td>Our products are high quality.</td>
+        <td> <label> <input type="radio" name="k" value="1" checked>1</label> </td>
+        <td> <label> <input type="radio" name="k" value="2" checked>2</label> </td>
+        <td> <label> <input type="radio" name="k" value="3" checked>3</label> </td>
+        <td> <label> <input type="radio" name="k" value="4" checked>4</label> </td>
+    </tr>
+    <tr>
+        <td>You would recommend our product to a friend or coworker.</td>
+        <td> <label> <input type="radio" name="o" value="1" checked>1</label> </td>
+        <td> <label> <input type="radio" name="o" value="2" checked>2</label> </td>
+        <td> <label> <input type="radio" name="o" value="3" checked>3</label> </td>
+        <td> <label> <input type="radio" name="o" value="4" checked>4</label> </td>
+    </tr>
+
+</table>
+<input type="submit" value="Submit" > <br>
+</body>
+</html>
